@@ -2,22 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trivia Quiz</title>
-  <style type="text/css">
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
-  </style>
+
+  <!-- Bootstrap CDN -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7'
+    crossorigin='anonymous'>
+
 </head>
 
 <body>
-
+  <!-- Bootstrap Container will hold everything. -->
   <div class="container">
-    <h1>Movie Search</h1>
+    <!-- Jumbotron holds the title section. -->
+    <div class='jumbotron'>
+      <div class='container'>
+        <h1>Movie Search</h1>
+        <h2>Guess the name of movie!</h2>
+        <small>Click any letter to begin...</small>
+      </div>
+    </div>
 
     <!-- Rendered buttons will get dumped Here  -->
     <div id="buttons-view"></div>

@@ -62,3 +62,7 @@ button:focus {
 footer {
   margin-top: 10px;
 }
+
+#restart {
+  background-color: #79bd9a;
+}

@@ -54,6 +54,11 @@ body {
   color: white !important;
 }
 
+button:focus {
+  background-color: #2e38f6;
+  outline: 0;
+}
+
 footer {
   margin-top: 10px;
 }

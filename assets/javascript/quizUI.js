@@ -36,7 +36,7 @@ var QuizUI = {
     triviaOverHTML += '<h2>Your score is: ' + quiz.score + '</h2>';
     triviaOverHTML += '<h2>Wrong answers: ' + quiz.wrongAnswers + '</h2>';
     triviaOverHTML +=
-      "<button id='restart' type='button' class='btn btn-primary'>Start Over</button>";
+      "<button id='restart' type='button' class='btn btn-lg'>Start Over</button>";
     this.populateIdWithHTML('quiz', triviaOverHTML);
     this.restart('restart');
   },
@@ -71,6 +71,7 @@ var QuizUI = {
     button.onclick = function() {
       quiz.userAnswer(guess);
       QuizUI.display();
+      button.style.outline = 0;
     };
   },
 
@@ -93,7 +94,6 @@ var QuizUI = {
 
   next: function(id) {
     var nextButton = document.getElementById(id);
-    //console.log(button);
     nextButton.onclick = function() {
       Quiz.answer = false;
       QuizUI.display();
